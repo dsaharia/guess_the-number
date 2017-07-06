@@ -4,12 +4,12 @@ import random
 print('Hello there, What is your name ?')
 name = input()
 
-print('Hello ' + name + ', I am thinking of a number between 1 and 20')
-number = random.randint(1, 20)  # random number is generated
+print('Hello ' + name + ', I am thinking of a number between 1 and 5')
+number = random.randint(1, 5)  # random number is generated
 
-# Ask the player for 5 guesses
+# Ask the player for 3 guesses
 
-for guessTaken in range(1, 6):  # guess conditions
+for guessTaken in range(1, 4):  # guess conditions
     print('Take a guess:')
     guess = int(input())
     if guess < number:
